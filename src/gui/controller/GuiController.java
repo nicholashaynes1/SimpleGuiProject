@@ -3,7 +3,7 @@ package gui.controller;
 import gui.view.GuiFrame;
 
 /**
- * Appcontroller for the simple gui project
+ *  controller for the simple gui project
  * @author nhay7834
  *
  */
