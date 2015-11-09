@@ -21,6 +21,9 @@ public class GuiFrame extends JFrame
 		
 	}
 	
+	/**
+	 * helper method to set up our frame.
+	 */
 	private void setupFrame()
 	{
 		this.setContentPane(basePanel);
