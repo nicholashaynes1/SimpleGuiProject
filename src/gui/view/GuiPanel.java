@@ -1,11 +1,9 @@
 package gui.view;
 
-import javax.swing.JPanel;
+import javax.swing.*;
 import gui.controller.GuiController;
-
-import javax.swing.SpringLayout;
-import javax.swing.JButton;
-import javax.swing.JTextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GuiPanel extends JPanel
 {
@@ -47,6 +45,13 @@ public class GuiPanel extends JPanel
 	}
 	private void setupListeners()
 	{
+		firstButton.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				firstTextField.setText("You clicked it.");
+			}
+		});
 		
 	}
 
