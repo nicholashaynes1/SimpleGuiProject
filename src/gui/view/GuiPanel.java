@@ -23,6 +23,7 @@ public class GuiPanel extends JPanel
 		firstButton = new JButton("Do not click the button");
 		firstTextField = new JTextField("you can type words here");
 		
+		
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -37,8 +38,12 @@ public class GuiPanel extends JPanel
 		this.add(firstButton);
 		this.add(firstTextField);
 	}
-	private void setupLayout(){
-		
+	private void setupLayout()
+	{
+		baseLayout.putConstraint(SpringLayout.NORTH, firstTextField, 75, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, firstTextField, 137, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, firstButton, -41, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, firstButton, -25, SpringLayout.EAST, this);
 	}
 	private void setupListeners()
 	{
